@@ -1,6 +1,6 @@
 //
 //  IntroLayer.h
-//  Inc-02-SpriteSpin
+//  IncrementalAI
 //
 //  Created by Jaaromy Zierse on 10/6/13.
 //  Copyright OffCoding 2013. All rights reserved.
