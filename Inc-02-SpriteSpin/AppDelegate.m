@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Inc-01-Sprite
+//  Inc-02-SpriteSpin
 //
-//  Created by Jaaromy Zierse on 10/5/13.
+//  Created by Jaaromy Zierse on 10/6/13.
 //  Copyright OffCoding 2013. All rights reserved.
 //
 

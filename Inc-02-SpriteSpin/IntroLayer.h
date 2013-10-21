@@ -1,8 +1,8 @@
 //
 //  IntroLayer.h
-//  Inc-01-Sprite
+//  Inc-02-SpriteSpin
 //
-//  Created by Jaaromy Zierse on 10/5/13.
+//  Created by Jaaromy Zierse on 10/6/13.
 //  Copyright OffCoding 2013. All rights reserved.
 //
 
@@ -10,12 +10,12 @@
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
 
-// SpriteLayer
+// HelloWorldLayer
 @interface IntroLayer : CCLayer
 {
 }
 
-// returns a CCScene that contains the SpriteLayer as the only child
+// returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
 
 @end

@@ -41,18 +41,27 @@
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
 		CCSprite *boid = [CCSprite spriteWithFile:@"Boid.png"];
+        boid.anchorPoint = ccp(0.5,0.1);
         
         
 		// ask director for the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
-	
+        
 		// position the sprite on the center of the screen
 		boid.position =  ccp( size.width /2 , size.height/2 );
-		boid.scale = 1.0f;
+		
+        [self scheduleUpdate];
+        
 		// add the label as a child to this Layer
-		[self addChild: boid];
+		[self addChild:boid z:1 tag:1];
 	}
 	return self;
+}
+
+- (void) update:(ccTime)delta
+{
+    CCNode* boid = [self getChildByTag:1];
+    boid.rotation += 100 * delta;
 }
 
 // on "dealloc" you need to release all your retained objects

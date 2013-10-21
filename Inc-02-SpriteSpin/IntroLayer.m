@@ -1,8 +1,8 @@
 //
 //  IntroLayer.m
-//  Inc-01-Sprite
+//  Inc-02-SpriteSpin
 //
-//  Created by Jaaromy Zierse on 10/5/13.
+//  Created by Jaaromy Zierse on 10/6/13.
 //  Copyright OffCoding 2013. All rights reserved.
 //
 
@@ -14,10 +14,10 @@
 
 #pragma mark - IntroLayer
 
-// SpriteLayer implementation
+// HelloWorldLayer implementation
 @implementation IntroLayer
 
-// Helper class method that creates a Scene with the SpriteLayer as the only child.
+// Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 +(CCScene *) scene
 {
 	// 'scene' is an autorelease object.
