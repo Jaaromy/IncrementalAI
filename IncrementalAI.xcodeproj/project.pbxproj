@@ -146,7 +146,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7FC088461802659200DB2CE5 /* Inc-02-SpriteSpin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inc-02-SpriteSpin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC088461802659200DB2CE5 /* IncrementalAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IncrementalAI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC088491802659200DB2CE5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7FC0884B1802659200DB2CE5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7FC0884D1802659200DB2CE5 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -454,7 +454,7 @@
 		7FC0883D1802659200DB2CE5 = {
 			isa = PBXGroup;
 			children = (
-				7FC0885D1802659200DB2CE5 /* Inc-02-SpriteSpin */,
+				7FC0885D1802659200DB2CE5 /* IncrementalAI */,
 				7FC088481802659200DB2CE5 /* Frameworks */,
 				7FC088471802659200DB2CE5 /* Products */,
 			);
@@ -463,7 +463,7 @@
 		7FC088471802659200DB2CE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FC088461802659200DB2CE5 /* Inc-02-SpriteSpin.app */,
+				7FC088461802659200DB2CE5 /* IncrementalAI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -484,7 +484,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7FC0885D1802659200DB2CE5 /* Inc-02-SpriteSpin */ = {
+		7FC0885D1802659200DB2CE5 /* IncrementalAI */ = {
 			isa = PBXGroup;
 			children = (
 				7FC089EE1802659500DB2CE5 /* AppDelegate.h */,
@@ -497,7 +497,7 @@
 				7FC088761802659200DB2CE5 /* libs */,
 				7FC089EA1802659500DB2CE5 /* Supporting Files */,
 			);
-			path = "Inc-02-SpriteSpin";
+			path = "IncrementalAI";
 			sourceTree = "<group>";
 		};
 		7FC0885E1802659200DB2CE5 /* Resources */ = {
@@ -887,9 +887,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FC088451802659200DB2CE5 /* Inc-02-SpriteSpin */ = {
+		7FC088451802659200DB2CE5 /* IncrementalAI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FC089F91802659500DB2CE5 /* Build configuration list for PBXNativeTarget "Inc-02-SpriteSpin" */;
+			buildConfigurationList = 7FC089F91802659500DB2CE5 /* Build configuration list for PBXNativeTarget "IncrementalAI" */;
 			buildPhases = (
 				7FC088421802659200DB2CE5 /* Sources */,
 				7FC088431802659200DB2CE5 /* Frameworks */,
@@ -899,9 +899,9 @@
 			);
 			dependencies = (
 			);
-			name = "Inc-02-SpriteSpin";
-			productName = "Inc-02-SpriteSpin";
-			productReference = 7FC088461802659200DB2CE5 /* Inc-02-SpriteSpin.app */;
+			name = "IncrementalAI";
+			productName = "IncrementalAI";
+			productReference = 7FC088461802659200DB2CE5 /* IncrementalAI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -923,7 +923,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7FC088411802659200DB2CE5 /* Build configuration list for PBXProject "Inc-02-SpriteSpin" */;
+			buildConfigurationList = 7FC088411802659200DB2CE5 /* Build configuration list for PBXProject "IncrementalAI" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -935,7 +935,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FC088451802659200DB2CE5 /* Inc-02-SpriteSpin */,
+				7FC088451802659200DB2CE5 /* IncrementalAI */,
 			);
 		};
 /* End PBXProject section */
@@ -1135,9 +1135,9 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Inc-02-SpriteSpin/Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"Inc-02-SpriteSpin/libs/kazmath/include\"";
-				INFOPLIST_FILE = "Inc-02-SpriteSpin/Resources/Info.plist";
+				GCC_PREFIX_HEADER = "IncrementalAI/Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"IncrementalAI/libs/kazmath/include\"";
+				INFOPLIST_FILE = "IncrementalAI/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -1155,9 +1155,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Inc-02-SpriteSpin/Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"Inc-02-SpriteSpin/libs/kazmath/include\"";
-				INFOPLIST_FILE = "Inc-02-SpriteSpin/Resources/Info.plist";
+				GCC_PREFIX_HEADER = "IncrementalAI/Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"IncrementalAI/libs/kazmath/include\"";
+				INFOPLIST_FILE = "IncrementalAI/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -1173,7 +1173,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FC088411802659200DB2CE5 /* Build configuration list for PBXProject "Inc-02-SpriteSpin" */ = {
+		7FC088411802659200DB2CE5 /* Build configuration list for PBXProject "IncrementalAI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FC089F71802659500DB2CE5 /* Debug */,
@@ -1182,7 +1182,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FC089F91802659500DB2CE5 /* Build configuration list for PBXNativeTarget "Inc-02-SpriteSpin" */ = {
+		7FC089F91802659500DB2CE5 /* Build configuration list for PBXNativeTarget "IncrementalAI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FC089FA1802659500DB2CE5 /* Debug */,

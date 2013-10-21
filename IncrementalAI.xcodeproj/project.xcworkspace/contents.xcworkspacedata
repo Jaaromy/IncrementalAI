@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Inc-02-SpriteSpin.xcodeproj">
+      location = "self:IncrementalAI.xcodeproj">
    </FileRef>
 </Workspace>
