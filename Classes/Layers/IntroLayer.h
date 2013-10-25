@@ -1,19 +1,17 @@
 //
-//  HelloWorldLayer.h
-//  Inc-02-SpriteSpin
+//  IntroLayer.h
+//  IncrementalAI
 //
 //  Created by Jaaromy Zierse on 10/6/13.
 //  Copyright OffCoding 2013. All rights reserved.
 //
 
 
-#import <GameKit/GameKit.h>
-
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
 
 // HelloWorldLayer
-@interface SpriteLayer : CCLayer <GKAchievementViewControllerDelegate, GKLeaderboardViewControllerDelegate>
+@interface IntroLayer : CCLayer
 {
 }
 
