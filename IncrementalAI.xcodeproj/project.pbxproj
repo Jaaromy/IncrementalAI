@@ -34,6 +34,7 @@
 		7FC088561802659200DB2CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC088551802659200DB2CE5 /* Foundation.framework */; };
 		7FC088581802659200DB2CE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC088571802659200DB2CE5 /* CoreGraphics.framework */; };
 		7FC0885A1802659200DB2CE5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC088591802659200DB2CE5 /* CoreText.framework */; };
+		7FE691CE181B84C900179370 /* CCMenuItemSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE691CD181B84C900179370 /* CCMenuItemSlider.m */; };
 		7FECD6F9181A1E1100BE3B2F /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FECD5F5181A1E1100BE3B2F /* CCAction.m */; };
 		7FECD6FA181A1E1100BE3B2F /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FECD5F7181A1E1100BE3B2F /* CCActionCamera.m */; };
 		7FECD6FB181A1E1100BE3B2F /* CCActionCatmullRom.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FECD5F9181A1E1100BE3B2F /* CCActionCatmullRom.m */; };
@@ -183,6 +184,8 @@
 		7FC088551802659200DB2CE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7FC088571802659200DB2CE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7FC088591802659200DB2CE5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		7FE691CC181B84C900179370 /* CCMenuItemSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuItemSlider.h; sourceTree = "<group>"; };
+		7FE691CD181B84C900179370 /* CCMenuItemSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuItemSlider.m; sourceTree = "<group>"; };
 		7FECD5F4181A1E1100BE3B2F /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
 		7FECD5F5181A1E1100BE3B2F /* CCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAction.m; sourceTree = "<group>"; };
 		7FECD5F6181A1E1100BE3B2F /* CCActionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActionCamera.h; sourceTree = "<group>"; };
@@ -662,6 +665,8 @@
 				7FECD639181A1E1100BE3B2F /* CCMenu.m */,
 				7FECD63A181A1E1100BE3B2F /* CCMenuItem.h */,
 				7FECD63B181A1E1100BE3B2F /* CCMenuItem.m */,
+				7FE691CC181B84C900179370 /* CCMenuItemSlider.h */,
+				7FE691CD181B84C900179370 /* CCMenuItemSlider.m */,
 				7FECD63C181A1E1100BE3B2F /* CCMotionStreak.h */,
 				7FECD63D181A1E1100BE3B2F /* CCMotionStreak.m */,
 				7FECD63E181A1E1100BE3B2F /* CCNode+Debug.h */,
@@ -1109,6 +1114,7 @@
 				7FECD704181A1E1100BE3B2F /* CCActionTiledGrid.m in Sources */,
 				7FECD716181A1E1100BE3B2F /* CCLabelAtlas.m in Sources */,
 				7FECD738181A1E1100BE3B2F /* CCTMXXMLParser.m in Sources */,
+				7FE691CE181B84C900179370 /* CCMenuItemSlider.m in Sources */,
 				7FECD752181A1E1100BE3B2F /* CDAudioManager.m in Sources */,
 				7FECD753181A1E1100BE3B2F /* CDOpenALSupport.m in Sources */,
 				7FECD748181A1E1100BE3B2F /* ccCArray.m in Sources */,

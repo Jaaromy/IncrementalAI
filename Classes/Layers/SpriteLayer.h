@@ -15,8 +15,9 @@
 // HelloWorldLayer
 @interface SpriteLayer : CCLayer <GKAchievementViewControllerDelegate, GKLeaderboardViewControllerDelegate>
 {
+   NSInteger _maxnum;
 }
-
+@property (nonatomic,readwrite,assign) NSInteger maxnum;
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
 

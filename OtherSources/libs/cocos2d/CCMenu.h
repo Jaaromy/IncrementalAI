@@ -26,6 +26,7 @@
 
 
 #import "CCMenuItem.h"
+#import "CCMenuItemSlider.h"
 #import "CCLayer.h"
 
 typedef enum  {

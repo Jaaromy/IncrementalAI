@@ -17,6 +17,7 @@
 
 // SpriteLayer implementation
 @implementation SpriteLayer
+@synthesize maxnum = _maxnum;
 
 // Helper class method that creates a Scene with the SpriteLayer as the only child.
 +(CCScene *) scene
@@ -41,57 +42,57 @@
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
         
+        CCSprite *boid = [CCSprite spriteWithFile:@"Boid.png"];
+        boid.anchorPoint = ccp(0.5,0.1);
         
-		// ask director for the window size
-		CGSize size = [[CCDirector sharedDirector] winSize];
         
-		// position the sprite on the center of the screen
-		
+        // ask director for the window size
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        
+        // position the sprite on the center of the screen
+        boid.position =  ccp( size.width /2 , size.height/2 );
+        
         [self scheduleUpdate];
         
-        // create the Draw Node
-        CCDrawNode *draw = [[CCDrawNode alloc] init];
-        
-        for (int i = 1; i <= 10000; i++)
-        {
-            int xPos = arc4random() % (int)size.width;
-            int yPos = arc4random() % (int)size.height;
-            
-            [draw drawDot:ccp(xPos, yPos) radius:3 color:ccc4f(CCRANDOM_0_1(), CCRANDOM_0_1(), CCRANDOM_0_1(), 1)];
-        }
-        
-        for (int i = 1; i <= 500; i++)
-        {
-            CCSprite *boid = [CCSprite spriteWithFile:@"Boid.png"];
-            boid.anchorPoint = ccp(0.5,0.1);
-            int xPos = arc4random() % (int)size.width;
-            int yPos = arc4random() % (int)size.height;
-            
-            boid.position =  ccp( xPos , yPos );
-            [self addChild:boid z:0 tag:i];
-        }
-		
-        [self addChild:draw z:0 tag:600];
-	}
+        // add the label as a child to this Layer
+        [self addChild:boid z:1 tag:1];
+
+        [self setUpMenus];
+    }
 	return self;
+}
+
+-(void) changeMaxNumber
+{
+    
+}
+
+-(void) setUpMenus
+{
+    //TODO: Create SliderTrack.jpg and SliderKnob.png and reference them below in place of boid.png
+    CCMenuItemSlider	*slider	= [CCMenuItemSlider itemFromTrackImage: @"Boid.png"
+                                                          knobImage: @"Boid.png"
+                                                             target: self
+                                                           selector: @selector(changeMaxNumber:)]; //TODO: figure out how to implement this selector
+    slider.minValue		= 10;
+    slider.maxValue		= 100;
+    slider.value		= _maxnum;
+    
+    // Create a menu and add your menu items to it
+    CCMenu * myMenu = [CCMenu menuWithItems:slider, nil];
+    
+    // Arrange the menu items vertically
+    [myMenu alignItemsVertically];
+    
+    // add the menu to your scene
+    [self addChild:myMenu];
 }
 
 - (void) update:(ccTime)delta
 {
-    for (int i = 1; i <= 500; i++)
-    {
-        CCNode* boid = [self getChildByTag:i];
+    CCNode* boid = [self getChildByTag:1];
         
-        if (i % 2 == 0)
-        {
-            boid.rotation += boid.tag * delta;
-        }
-        else
-        {
-            boid.rotation -= boid.tag * delta;
-        }
-        
-    }
+    boid.rotation += 100 * delta;
 }
 
 // on "dealloc" you need to release all your retained objects

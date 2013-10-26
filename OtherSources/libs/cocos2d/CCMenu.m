@@ -244,11 +244,18 @@ enum {
 	NSAssert(_state == kCCMenuStateTrackingTouch, @"[Menu ccTouchMoved] -- invalid state");
 
 	CCMenuItem *currentItem = [self itemForTouch:touch];
-
-	if (currentItem != _selectedItem) {
+    if (currentItem != _selectedItem) {
 		[_selectedItem unselected];
 		_selectedItem = currentItem;
 		[_selectedItem selected];
+	} else {
+        if ([_selectedItem respondsToSelector: @selector(dragToPoint:)])
+        {
+            CGPoint touchLocation = [_selectedItem convertTouchToNodeSpace: touch];
+            // Bug fixed by Cirakon: http://www.cocos2d-iphone.org/forums/topic/slider-control-warning-message/#post-386173
+            NSValue *location = [NSValue valueWithCGPoint:touchLocation];
+            [_selectedItem performSelector: @selector(dragToPoint:) withObject:location];
+        }
 	}
 }
 
