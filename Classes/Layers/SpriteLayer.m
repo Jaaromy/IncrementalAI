@@ -57,13 +57,12 @@
             int xPos = arc4random() % (int)size.width;
             int yPos = arc4random() % (int)size.height;
             
-            [draw drawDot:ccp(xPos, yPos) radius:3 color:ccc4f(CCRANDOM_0_1(), CCRANDOM_0_1(), CCRANDOM_0_1(), 1)];
+            [draw drawDot:ccp(xPos, yPos) radius:1.5 color:ccc4f(CCRANDOM_0_1(), CCRANDOM_0_1(), CCRANDOM_0_1(), 1)];
         }
         
         for (int i = 1; i <= 500; i++)
         {
             CCSprite *boid = [CCSprite spriteWithFile:@"Boid.png"];
-            boid.anchorPoint = ccp(0.5,0.1);
             int xPos = arc4random() % (int)size.width;
             int yPos = arc4random() % (int)size.height;
             
