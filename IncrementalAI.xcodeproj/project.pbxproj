@@ -34,6 +34,9 @@
 		7FC088561802659200DB2CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC088551802659200DB2CE5 /* Foundation.framework */; };
 		7FC088581802659200DB2CE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC088571802659200DB2CE5 /* CoreGraphics.framework */; };
 		7FC0885A1802659200DB2CE5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC088591802659200DB2CE5 /* CoreText.framework */; };
+		7FE691D1181C3C2200179370 /* Boid2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE691CF181C3C2200179370 /* Boid2.png */; };
+		7FE691D2181C3C2200179370 /* Boid2.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 7FE691D0181C3C2200179370 /* Boid2.xcf */; };
+		7FE691D4181C409100179370 /* Boid_scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE691D3181C409100179370 /* Boid_scaled.png */; };
 		7FECD6F9181A1E1100BE3B2F /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FECD5F5181A1E1100BE3B2F /* CCAction.m */; };
 		7FECD6FA181A1E1100BE3B2F /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FECD5F7181A1E1100BE3B2F /* CCActionCamera.m */; };
 		7FECD6FB181A1E1100BE3B2F /* CCActionCatmullRom.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FECD5F9181A1E1100BE3B2F /* CCActionCatmullRom.m */; };
@@ -183,6 +186,9 @@
 		7FC088551802659200DB2CE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7FC088571802659200DB2CE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7FC088591802659200DB2CE5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		7FE691CF181C3C2200179370 /* Boid2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boid2.png; sourceTree = "<group>"; };
+		7FE691D0181C3C2200179370 /* Boid2.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Boid2.xcf; sourceTree = "<group>"; };
+		7FE691D3181C409100179370 /* Boid_scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boid_scaled.png; sourceTree = "<group>"; };
 		7FECD5F4181A1E1100BE3B2F /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
 		7FECD5F5181A1E1100BE3B2F /* CCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAction.m; sourceTree = "<group>"; };
 		7FECD5F6181A1E1100BE3B2F /* CCActionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActionCamera.h; sourceTree = "<group>"; };
@@ -511,9 +517,12 @@
 		7FB6413518163FF9003AC20C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7FE691CF181C3C2200179370 /* Boid2.png */,
+				7FE691D0181C3C2200179370 /* Boid2.xcf */,
 				7FB6413618163FF9003AC20C /* Boid.png */,
 				7FB6413718163FF9003AC20C /* Boid.xcf */,
 				7FB6413818163FF9003AC20C /* Boid_scaled.xcf */,
+				7FE691D3181C409100179370 /* Boid_scaled.png */,
 				7FB6413918163FF9003AC20C /* Default-568h@2x.png */,
 				7FB6413A18163FF9003AC20C /* Default-Landscape~ipad.png */,
 				7FB6413B18163FF9003AC20C /* Default.png */,
@@ -995,7 +1004,9 @@
 				7FB6414F18163FF9003AC20C /* Icon-Small@2x.png in Resources */,
 				7FB6414518163FF9003AC20C /* Boid.png in Resources */,
 				7FECD768181A1E1100BE3B2F /* LICENSE_cocos2d.txt in Resources */,
+				7FE691D4181C409100179370 /* Boid_scaled.png in Resources */,
 				7FB6414D18163FF9003AC20C /* Icon-Small-50.png in Resources */,
+				7FE691D2181C3C2200179370 /* Boid2.xcf in Resources */,
 				7FB6414918163FF9003AC20C /* Default-Landscape~ipad.png in Resources */,
 				7FB6415118163FF9003AC20C /* Icon@2x.png in Resources */,
 				7FB6414A18163FF9003AC20C /* Default.png in Resources */,
@@ -1006,6 +1017,7 @@
 				7FECD757181A1E1100BE3B2F /* README.md in Resources */,
 				7FB6415318163FF9003AC20C /* iTunesArtwork in Resources */,
 				7FECD769181A1E1100BE3B2F /* LICENSE_CocosDenshion.txt in Resources */,
+				7FE691D1181C3C2200179370 /* Boid2.png in Resources */,
 				7FB6414B18163FF9003AC20C /* Default@2x.png in Resources */,
 				7FECD76A181A1E1100BE3B2F /* LICENSE_Kazmath.txt in Resources */,
 			);
